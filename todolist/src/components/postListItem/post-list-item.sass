@@ -1,0 +1,45 @@
+.list
+  position: relative
+  width: auto
+  border: 1px solid #d0d6dc
+  border-radius: 5px
+  padding: 15px
+  margin-bottom: 15px
+  background: #ffffff
+  transition: 0.2s
+  text-overflow: clip
+  white-space: nowrap
+  overflow: hidden
+  &-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    & span 
+      font-size: 20px
+      transition: 0.5s
+      cursor: pointer
+      &:hover
+        color: #148da0
+    &__button
+      margin-left: 5px
+      background: #17a2b8
+      padding: 10px 15px
+      border: none
+      border-radius: 5px
+      color: #ffffff
+      cursor: pointer
+      transition: 0.5s
+      outline: none
+      &:hover
+        background: #148da0
+  &-check
+    transition: 0.2s
+    transform: scaleY(0) translateY(0%)
+    transform-origin: top center
+    display: none
+    visibility: hidden
+
+.show
+  transform: scaleY(1) translateY(0%)
+  display: block
+  visibility: visible
